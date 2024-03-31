@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap');
+*{ font-family: 'Lato', sans-serif;
+  
+}
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #D6EAF8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+canvas{
+  background-color: white;
+  margin: 0 10px;
+}
+
+input, #input-file{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  
+}
+
+#input-file {
+  border: none;
+}
+
+
+
+input:hover {
+  background: lightgreen;
+}
+
+#threshold-control {
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#threshold,
+#threshold-val {
+  display: inline-block;
+  width: 50px;
+  margin-left: 5px; /*fix later*/
+}
+
+#threshold-label {
+  margin-right: 10px;
+}
+
+#download-btn {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#download-btn:hover {
+  background-color: #45a049;
+}
